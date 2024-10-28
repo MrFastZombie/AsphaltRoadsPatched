@@ -21,18 +21,18 @@ data:extend(
             main =
             {
                 {
-                    picture = "__AsphaltPaving__/graphics/terrain/asphalt/asphalt.png",
+                    picture = "__AsphaltRoadsPatched__/graphics/terrain/asphalt/asphalt.png",
                     count = 16,
                     size = 1
                 },
                 {
-                    picture = "__AsphaltPaving__/graphics/terrain/asphalt/asphalt2.png",
+                    picture = "__AsphaltRoadsPatched__/graphics/terrain/asphalt/asphalt2.png",
                     count = 4,
                     size = 2,
                     probability = 0.3,
                 },
                 {
-                    picture = "__AsphaltPaving__/graphics/terrain/asphalt/asphalt4.png",
+                    picture = "__AsphaltRoadsPatched__/graphics/terrain/asphalt/asphalt4.png",
                     count = 4,
                     size = 4,
                     probability = 0.8,
@@ -40,27 +40,27 @@ data:extend(
             },
             inner_corner =
             {
-                picture = "__AsphaltPaving__/graphics/terrain/asphalt/asphalt-inner-corner.png",
+                picture = "__AsphaltRoadsPatched__/graphics/terrain/asphalt/asphalt-inner-corner.png",
                 count = 8
             },
             outer_corner =
             {
-                picture = "__AsphaltPaving__/graphics/terrain/asphalt/asphalt-outer-corner.png",
+                picture = "__AsphaltRoadsPatched__/graphics/terrain/asphalt/asphalt-outer-corner.png",
                 count = 8
             },
             side =
             {
-                picture = "__AsphaltPaving__/graphics/terrain/asphalt/asphalt-side.png",
+                picture = "__AsphaltRoadsPatched__/graphics/terrain/asphalt/asphalt-side.png",
                 count = 8
             },
             u_transition =
             {
-                picture = "__AsphaltPaving__/graphics/terrain/asphalt/asphalt-u.png",
+                picture = "__AsphaltRoadsPatched__/graphics/terrain/asphalt/asphalt-u.png",
                 count = 8
             },
                 o_transition =
             {
-                picture = "__AsphaltPaving__/graphics/terrain/asphalt/asphalt-o.png",
+                picture = "__AsphaltRoadsPatched__/graphics/terrain/asphalt/asphalt-o.png",
                 count = 1
             }
         },

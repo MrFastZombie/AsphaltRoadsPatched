@@ -8,7 +8,7 @@ AR_config.asphalt_vehicle_speed_modifier = 0.5 -- refined concrete: 0.8
 
 AR_config.asphalt_mining_speed = 0.1 -- refined concrete: 0.1 
 
--- Set this values ingame in Setting/Mods/AsphaltPaving/Startup
+-- Set this values ingame in Setting/Mods/AsphaltRoadsPatched/Startup
 AR_config.use_BioIndustries_items = settings.startup["AR-use-items-from-bioindustries"].value
 AR_config.use_WoodGasification_items = settings.startup["AR-use-items-from-woodgasification"].value
 AR_config.use_PyPetrol_items = settings.startup["AR-use-items-from-pypetrol"].value

@@ -5,7 +5,7 @@ data:extend(
     {
         type = "item",
         name = "Arci-asphalt",
-        icon = "__AsphaltPaving__/graphics/icons/hr/asphalt.png",
+        icon = "__AsphaltRoadsPatched__/graphics/icons/hr/asphalt.png",
         icon_size = 64,
         flags = {},
         subgroup = "Arci-asphalt-1",

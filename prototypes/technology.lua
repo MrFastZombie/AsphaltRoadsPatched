@@ -47,7 +47,7 @@ data:extend(
     {
         type = "technology",
         name = "Arci-asphalt",
-        icon = "__AsphaltPaving__/graphics/technology/tech-asphalt.png",
+        icon = "__AsphaltRoadsPatched__/graphics/technology/tech-asphalt.png",
         icon_size = 128,
         prerequisites = research_cost[cost_lvl].prerequisites,
         unit = research_cost[cost_lvl].unit,

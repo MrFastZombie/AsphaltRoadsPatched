@@ -1,7 +1,7 @@
 local config = require "config"
 local tile_transitions = require("util/tile-transitions")
 
-local path = "__AsphaltPaving__/graphics/terrain/"
+local path = "__AsphaltRoadsPatched__/graphics/terrain/"
 local type1_tilesets = {"asphalt-zebra-crossing"}
 local type2_tilesets = {"asphalt-triangle-white"}
 local type3a_tilesets = {"asphalt-hazard-white"}
@@ -148,7 +148,7 @@ function func.createIRTentries(tileset, defaultDir, subgrp)
     {
         type = "item",
         name = "Arci-"..tileset,
-        icon = "__AsphaltPaving__/graphics/icons/"..tileset..".png",
+        icon = "__AsphaltRoadsPatched__/graphics/icons/"..tileset..".png",
         icon_size = 32,
         flags = {},
         subgroup = subgrp,

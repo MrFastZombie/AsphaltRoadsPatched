@@ -13,7 +13,7 @@ if settings.startup["AR-item-group"].value == "asphalt" then
 			type = "item-group",
 			name = "AR-road-construction",
 			order = "d-b",
-			icon = "__AsphaltPaving__/graphics/icon-group/road-construction.png",
+			icon = "__AsphaltRoadsPatched__/graphics/icon-group/road-construction.png",
 			icon_size = 64,
 		}
 	})

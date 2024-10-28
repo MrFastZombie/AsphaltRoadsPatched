@@ -1,10 +1,10 @@
 {
-  "name": "AsphaltPaving",
-  "version": "1.3.1",
-  "title": "Asphalt Paving (Roads)",
+  "name": "AsphaltRoadsPatched",
+  "version": "1.4.0",
+  "title": "Asphalt Roads Patched",
   "author": "Arcitos",
   "homepage": "",
-  "description": "Asphalt pavement for increased vehicle speed. Also includes tiles for lane marking (single and double lines) and various hazard areas.",
-  "factorio_version": "1.1",
-  "dependencies": ["base >= 1.1.0", "?Bio_Industries", "?Dectorio >= 0.8.4", "?Wood_Gasification >= 0.5.1", "?pypetroleumhandling >= 1.1.8"]
+  "description": "Asphalt pavement for increased vehicle speed. Also includes tiles for lane marking (single and double lines) and various hazard areas. Patched for 2.0 by MrFastZombie.",
+  "factorio_version": "2.0",
+  "dependencies": ["base >= 2.0", "?Bio_Industries", "?Dectorio >= 0.8.4", "?Wood_Gasification >= 0.5.1", "?pypetroleumhandling >= 1.1.8"]
 }
