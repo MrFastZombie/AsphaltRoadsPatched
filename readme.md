@@ -16,7 +16,7 @@ All code changes are licensed under the same license as the original mod: MPL v2
 
 ### Credits
 
-[Zetty](https://mods.factorio.com/user/Zetty "Zetty's profile") for updating the previous version of the mod.
+[Zetty](https://mods.factorio.com/user/Zetty "Zetty's profile") for updating the [previous version](https://mods.factorio.com/mod/AsphaltPaving "Zetty's version of the mod") of the mod.
 
 [Arcitos](https://mods.factorio.com/user/Arcitos "Arcitos' profile") for developing the original mod.
 
