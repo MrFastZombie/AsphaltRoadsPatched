@@ -1,4 +1,25 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.0
+Date: 29. 10. 2024
+  Major Features:
+    - Updated for Factorio 2.0
+    - Renamed to AsphaltRoadsPatched
+  Bugfixes:
+    - Fixed crash when using tile reconverter (https://mods.factorio.com/mod/AsphaltPaving/discussion/612505b0df389accb61d80da)
+      - player.clean_cursor() -> player.clear_cursor()
+  Info:
+    - A summary of code changes that were needed for 2.0 compatability:
+      - Collision maps updated to new format.
+        - Example: collision_mask = {"ground-tile"} -> collision_mask = { layers = {ground_tile = true} }
+      - Tile transitions code updated to match Factorio 2.0.
+      - Recipes updated to new format.
+        - Results fields were moved to a results table in 2.0.
+      - Sound names fixed (ex: concrete-01.ogg -> concrete-1.ogg).
+      - Picture field updated to Spritesheet where applicable.
+      - Tile absorption updated to new format, with support for Space Age.
+        - Example (w/o Space Age): pollution_absorption_per_second = 0 -> absorptions_per_second = {pollution = 0.0}
+      - Variant transitions moved to Variant.transition.layout.overlay to fit 2.0.
+---------------------------------------------------------------------------------------------------
 Version: 1.3.1
 Date: 23. 01. 2021
   Bugfixes:

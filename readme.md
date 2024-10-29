@@ -1,14 +1,34 @@
-# Asphalt Paving
+# Asphalt Roads Patched
+
 ---
-## info.json updated by zetty
 
-**NOTICE: I've only changed the version number to allow for 1.1 and the name to avoid name collision, the rest of the mod is unchanged and is very likely to contain bugs caused by never versions, which I will try to fix when I discover them. I claim no ownership of the mod.**
+### About this version
 
-Also note that I cannot provde any migrations from the original mod to this update. I will also delete this fork when the original mod is updated.
+This version of Asphalt Roads has been patched to run on Factorio 2.0. 
+
+Do not expect many new features, I intend mainly to just have this wonderful mod working on the latest Factorio version. If you find bugs, please report them to the Github repository's issue page. 
+
+Please note, this version has a new mod name meaning that it probably won't bring back asphalt on old saves.
+
+If the original author updates their mod, I will mark this one as deprecated and link to it in the description.
+
+All code changes are licensed under the same license as the original mod: MPL v2.
+
+### Credits
+
+[Zetty](https://mods.factorio.com/user/Zetty "Zetty's profile") for updating the previous version of the mod.
+
+[Arcitos](https://mods.factorio.com/user/Arcitos "Arcitos' profile") for developing the original mod.
+
+---
+
+
 
 # Original description (Asphalt Roads)
 
-https://mods.factorio.com/mod/AsphaltRoads/
+Note that some info below could be outdated!
+
+https://mods.factorio.com/mod/AsphaltRoads
 
 ## Introduction
 
@@ -17,14 +37,13 @@ Then worry not: This mod was made to help fulfilling your infrastructure dreams.
 
 **Asphalt Roads**
 
-"Asphalt Roads" adds a new tile set with a smooth, black road surface to your games, including tiles for hazard marking and lane marking. Enjoy the reduced vehicle friction modifier and accelerate up to 200 km/h with your car (using rocket fuel). 
+"Asphalt Roads" adds a new tile set with a smooth, black road surface to your games, including tiles for hazard marking and lane marking. Enjoy the reduced vehicle friction modifier and accelerate up to 200 km/h with your car (using rocket fuel).
 
 - Mark separate lanes on your roads with single or double lines
-- Mark hazard areas in various colours e.g. near railway crossings or gates 
+- Mark hazard areas in various colours e.g. near railway crossings or gates
 - Set up pedestrian crossings with zebra crossing or "shark teeth" tiles
 
 For a quick live demonstration (though a bit dated, but nevertheless very well explained): [Asphalt Roads mod spotlight by Xterminator](https://www.youtube.com/watch?v=s5w6K9xEaRo)
-
 
 ## Details
 
@@ -32,37 +51,31 @@ For a quick live demonstration (though a bit dated, but nevertheless very well e
 
 ![Imgur](http://i.imgur.com/WYTCwKI.png)
 
-- **Asphalt** is the base tile. 
-
-- **Asphalt with lane marking** consists of two items for white and yellow lane marking in 45, 90, 135 and 180 degree angles and two items for tiles that divert lines by 45 degree to the left or the right. 
-
+- **Asphalt** is the base tile.
+- **Asphalt with lane marking** consists of two items for white and yellow lane marking in 45, 90, 135 and 180 degree angles and two items for tiles that divert lines by 45 degree to the left or the right.
 - **Asphalt with zebra crossing marking** are two tiles with thick white lines
-
 - **Asphalt with white triangle** are four tiles with "shark teeth"
-
-- **Asphalt with hazard marking** are five separate items for white, yellow, red, blue and green hazard marking. 
+- **Asphalt with hazard marking** are five separate items for white, yellow, red, blue and green hazard marking.
 
 ![Imgur](http://i.imgur.com/36NTyPO.png)
 
 - **Double line tiles** are another variation of lane marking tiles
 
 ### Technology
+
 Basic technology is called **Asphalt** and needs concrete as a prerequisite.
 
-### Mod recommendation and support 
+### Mod recommendation and support
 
 Recommended mods that work well in addition to this one:
 
 - [Pavement Drive Assist](https://mods.factorio.com/mods/Arcitos/PavementDriveAssist): Allows player driven vehicles to detect lane marking and follow your roads
-
 - [Concrete Signpost](https://mods.factorio.com/mods/Klonan/Concrete_Lamppost) (by Klonan) adds sign posts that look really nice in addition to asphalt roads
-
 - [Dectorio](https://mods.factorio.com/mods/PantherX/Dectorio) (by PantherX): This mod adds pretty traffic bollards (and a bunch of other neat stuff)
 
 Supported mods
 
 - [Bio Industries](https://mods.factorio.com/mods/TheSAguy/Bio_Industries): If present, crushed stone will be used as an ingredient for asphalt (replacing stone). This can be disabled in mod settings tab.
-
 - [Wood Gasification](https://mods.factorio.com/mod/Wood_Gasification): If present, tar will be used as an ingredient for asphalt (replacing crude oil). This can be disabled in mod settings tab.
 
 ### Effects on gameplay
@@ -81,10 +94,12 @@ If you like this mod and you've created a translation of your own, please do not
 
 ## Known issues
 
-**"I'm using 'Asphalt Roads' along with 'Alien Biomes' and other mods and are constantly getting errors about missing tiles"**
+**~~"I'm using 'Asphalt Roads' along with 'Alien Biomes' and other mods and are constantly getting errors about missing tiles"~~**
 
-Factorio's limit for the number of different tile prototypes a game can use at a time is hard-coded. **Currently this limit is 255 tiles**. If you load multiple mods that add a lot of new tiles (like "Alien Biomes" and "Dectorio"), this might be a problem, as "Asphalt Roads" allone needs 65 free tile slots to work properly (assuming all tiles being enabled).
+~~Factorio's limit for the number of different tile prototypes a game can use at a time is hard-coded. **Currently this limit is 255 tiles**. If you load multiple mods that add a lot of new tiles (like "Alien Biomes" and "Dectorio"), this might be a problem, as "Asphalt Roads" allone needs 65 free tile slots to work properly (assuming all tiles being enabled).~~
 
-If you experience problems, please try disabling some of the markings in Asphalt roads' mod options. Disabling both double line road line markings, for example, will free up 24 slots. If other mods allow disabling some of their tiles, please consider using those options, too.
+~~If you experience problems, please try disabling some of the markings in Asphalt roads' mod options. Disabling both double line road line markings, for example, will free up 24 slots. If other mods allow disabling some of their tiles, please consider using those options, too.~~
 
-Unfortunately, the Factorio devs do not consider raising this limit in the foreseeable future, so a bit of tinkering is unavoidable.
+~~Unfortunately, the Factorio devs do not consider raising this limit in the foreseeable future, so a bit of tinkering is unavoidable.~~
+
+**Note from MrFastZombie:** *This issue should no longer occur as the Factorio devs increased the tile limit in 2.0.*
