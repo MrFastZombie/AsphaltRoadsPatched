@@ -4,11 +4,11 @@
 
 ### About this version
 
-This version of Asphalt Roads has been patched to run on Factorio 2.0. 
+This version of Asphalt Roads has been patched to run on Factorio 2.0.
 
 Do not expect many new features, I intend mainly to just have this wonderful mod working on the latest Factorio version. If you find bugs, please report them to the Github repository's issue page.
 
-I have not played Space Age yet and I do not yet know how this mod interacts with it.
+I have not played Space Age yet and I do not yet know how this mod interacts with it, but I can confirm that it works at least on Nauvis.
 
 Please note, this version has a new mod name meaning that it probably won't bring back asphalt on old saves.
 
@@ -23,8 +23,6 @@ All code changes are licensed under the same license as the original mod: MPL v2
 [Arcitos](https://mods.factorio.com/user/Arcitos "Arcitos' profile") for developing the original mod.
 
 ---
-
-
 
 # Original description (Asphalt Roads)
 
