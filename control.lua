@@ -1,14 +1,14 @@
 -- check mod state
 script.on_configuration_changed(function(data)
     -- midgame installation
-    if data.mod_changes ~= nil and data.mod_changes["AsphaltPaving"] ~= nil and data.mod_changes["AsphaltPaving"].old_version == nil then
+    if data.mod_changes ~= nil and data.mod_changes["AsphaltRoadsPatched"] ~= nil and data.mod_changes["AsphaltRoadsPatched"].old_version == nil then
         -- anounce installation
-        notification({"AR-notification-midgame-update", {"AR-prefix"}, data.mod_changes["AsphaltPaving"].new_version})
+        notification({"AR-notification-midgame-update", {"AR-prefix"}, data.mod_changes["AsphaltRoadsPatched"].new_version})
 
     -- midgame update
-    elseif data.mod_changes ~= nil and data.mod_changes["AsphaltPaving"] ~= nil and data.mod_changes["AsphaltPaving"].old_version ~= nil then
-        local oldver = data.mod_changes["AsphaltPaving"].old_version
-        local newver = data.mod_changes["AsphaltPaving"].new_version
+    elseif data.mod_changes ~= nil and data.mod_changes["AsphaltRoadsPatched"] ~= nil and data.mod_changes["AsphaltRoadsPatched"].old_version ~= nil then
+        local oldver = data.mod_changes["AsphaltRoadsPatched"].old_version
+        local newver = data.mod_changes["AsphaltRoadsPatched"].new_version
         notification({"AR-notification-new-version", {"AR-prefix"}, oldver, newver})
 		
 		for index, force in pairs(game.forces) do
