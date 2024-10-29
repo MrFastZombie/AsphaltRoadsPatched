@@ -15,19 +15,19 @@ local mining_result = "Arci-asphalt"
 local mapcolours = {{"white", config.asphalt_colour_marking_white}, {"yellow", config.asphalt_colour_marking_yellow}, {"blue", config.asphalt_colour_marking_blue}, {"red", config.asphalt_colour_marking_red}, {"green", config.asphalt_colour_marking_green}}
 local walking_sounds = {
     {
-        filename = "__base__/sound/walking/concrete-01.ogg",
+        filename = "__base__/sound/walking/concrete-1.ogg",
         volume = 1.2
     },
     {
-        filename = "__base__/sound/walking/concrete-02.ogg",
+        filename = "__base__/sound/walking/concrete-2.ogg",
         volume = 1.2
     },
     {
-        filename = "__base__/sound/walking/concrete-03.ogg",
+        filename = "__base__/sound/walking/concrete-3.ogg",
         volume = 1.2
     },
     {
-        filename = "__base__/sound/walking/concrete-04.ogg",
+        filename = "__base__/sound/walking/concrete-4.ogg",
         volume = 1.2
 }}
 
