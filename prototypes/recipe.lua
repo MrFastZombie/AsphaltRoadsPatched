@@ -12,8 +12,10 @@ data:extend(
             {type="fluid", name="heavy-oil", amount=30},
             {type="item", name="stone-brick", amount=4}
         },
-        result= "Arci-asphalt",
-        result_count = 10,
+        results =
+        {
+            {type="item", name="Arci-asphalt", amount=10}
+        },
         crafting_machine_tint =
         {
 			primary = {r = 0.05, g = 0.05, b = 0.0, a = 1}, 

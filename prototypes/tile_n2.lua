@@ -139,10 +139,12 @@ function func.createIRTentries(tileset, defaultDir, subgrp)
         category = "crafting",
         ingredients =
         {
-            {"Arci-asphalt", 10}
+            {type ="item", name="Arci-asphalt", amount=10}
         },
-        result= "Arci-"..tileset,
-        result_count = 10
+        results=
+        {
+            {type="item", name="Arci-"..tileset, amount=10}
+        }
     },
     -- part 2: item definition
     {
