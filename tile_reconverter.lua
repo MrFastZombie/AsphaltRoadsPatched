@@ -25,7 +25,7 @@ function revert_tiles (event)
 						-- put the stack from the cursor back into main inventory
 						player.create_local_flying_text{text = {"AR-revert-completed", input_count, "[img=item/"..input_prototype.name.."]", newstack.count, "[img=item/"..newstack.name.."]"}, position = player.position}
 						player.play_sound{path = "utility/inventory_move"}
-						player.clean_cursor()
+						player.clear_cursor()
 					end
 				else
 					player.create_local_flying_text{text = {"AR-revert-error-invalid-tile", "[img=item/"..item.."]", ingredient}, position = player.position}
