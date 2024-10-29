@@ -1,5 +1,5 @@
 local config = require "config"
-local tile_transitions = require("util/tile-transitions")
+local tile_transitions = require("util/new-tile-transitions")
 
 local path = "__AsphaltRoadsPatched__/graphics/terrain/"
 local type1_tilesets = {"asphalt-zebra-crossing"}
