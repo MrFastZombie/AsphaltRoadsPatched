@@ -104,7 +104,7 @@ function func.createTileSetB(tileset, numDirections, dirNames, mainVariants, mai
             transition_merges_with_tile = "Arci-asphalt",
             minable = {mining_time = config.asphalt_mining_speed, result = mining_result},
             mined_sound = { filename = mining_sound },
-            collision_mask = {"ground-tile"},
+            collision_mask = {layers= {ground_tile=true}},
             walking_speed_modifier = config.asphalt_walking_speed_modifier,
             layer = tilelayer,
             shift_layer_if_asphald_roads_is_present = false,
@@ -158,9 +158,9 @@ function func.createIRTentries(tileset, defaultDir, subgrp)
         {
             result = "Arci-"..tileset..defaultDir,
             condition_size = 1,
-            condition = { "water-tile" }
+            condition = { layers = {water_tile = true} }
         }
-    }	         
+    }
     })
     -- part 3: tech entry
     table.insert(data.raw["technology"]["Arci-asphalt"].effects, {type = "unlock-recipe", recipe = "Arci-"..tileset})

@@ -15,13 +15,10 @@ data:extend(
         {
             result = "Arci-asphalt",
             condition_size = 1,
-            condition = { "water-tile" }
+            condition = { layers = {water_tile = true} }
         }
     }
 }
-)  
-	
-	
-	
+)
 
 

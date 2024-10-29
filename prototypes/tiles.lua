@@ -11,7 +11,7 @@ data:extend(
         needs_correction = false,
         minable = {mining_time = config.asphalt_mining_speed, result = "Arci-asphalt"},
         mined_sound = { filename = "__base__/sound/deconstruct-bricks.ogg" },
-        collision_mask = {"ground-tile"},
+        collision_mask = { layers = {ground_tile = true} },
         walking_speed_modifier = config.asphalt_walking_speed_modifier,
         layer = config.asphalt_base_layer,
         shift_layer_if_asphald_roads_is_present = false,
