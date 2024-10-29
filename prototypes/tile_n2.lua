@@ -31,6 +31,11 @@ local walking_sounds = {
         volume = 1.2
 }}
 
+local drive_sound = {
+    sound = "__base__/sound/driving/vehicle-surface-concrete.ogg",
+    fade_ticks = 6
+} --InterruptibleSound
+
 local func = {}
 local gOrderIndex = {}
 function func.default_value(suffix)
@@ -130,6 +135,7 @@ function func.createTileSetB(tileset, numDirections, dirNames, mainVariants, mai
                 } -- End of Variants
             },
             walking_sound = walking_sounds,
+            driving_sound = drive_sound,
             map_color = func.assignMapColour(tileset),
             --absorptions_per_second = {pollution = 0.0, pollen = 0.0},
             absorptions_per_second = {pollution = 0.0},

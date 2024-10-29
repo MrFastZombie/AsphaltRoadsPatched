@@ -1,6 +1,11 @@
 local config = require "config"
 local tile_transitions = require("util/new-tile-transitions")
 
+local drive_sound = {
+    sound = "__base__/sound/driving/vehicle-surface-concrete.ogg",
+    fade_ticks = 6
+} --InterruptibleSound
+
 data:extend(
 {
     -- asphalt tile --------------------------------------------------------------------
@@ -89,6 +94,7 @@ data:extend(
                 volume = 1.2
             }
         },
+        driving_sound = drive_sound,
         map_color = config.asphalt_colour,
         --absorptions_per_second = {pollution = 0.0, pollen = 0.0},
         absorptions_per_second = {pollution = 0.0},
