@@ -1,0 +1,2 @@
+# Ignoring the settings file because the Factorio debug extension tends to add personal file paths to it.
+/.vscode/settings.json
