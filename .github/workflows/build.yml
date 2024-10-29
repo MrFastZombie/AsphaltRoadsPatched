@@ -29,7 +29,10 @@ jobs:
           sparse-checkout: |
             thumbnail.png 
             info.json 
-            LICENSE 
+            LICENSE.md
+            license.md
+            LICENSE
+            license
             changelog.txt 
             locale 
             util
