@@ -38,31 +38,37 @@ data:extend(
                     probability = 0.8,
                 },
             },
-            inner_corner =
-            {
-                picture = "__AsphaltRoadsPatched__/graphics/terrain/asphalt/asphalt-inner-corner.png",
-                count = 8
-            },
-            outer_corner =
-            {
-                picture = "__AsphaltRoadsPatched__/graphics/terrain/asphalt/asphalt-outer-corner.png",
-                count = 8
-            },
-            side =
-            {
-                picture = "__AsphaltRoadsPatched__/graphics/terrain/asphalt/asphalt-side.png",
-                count = 8
-            },
-            u_transition =
-            {
-                picture = "__AsphaltRoadsPatched__/graphics/terrain/asphalt/asphalt-u.png",
-                count = 8
-            },
-                o_transition =
-            {
-                picture = "__AsphaltRoadsPatched__/graphics/terrain/asphalt/asphalt-o.png",
-                count = 1
-            }
+            transition = {
+                layout = {
+                    overlay = {
+                        inner_corner =
+                        {
+                            spritesheet = "__AsphaltRoadsPatched__/graphics/terrain/asphalt/asphalt-inner-corner.png",
+                            count = 8
+                        },
+                        outer_corner =
+                        {
+                            spritesheet = "__AsphaltRoadsPatched__/graphics/terrain/asphalt/asphalt-outer-corner.png",
+                            count = 8
+                        },
+                        side =
+                        {
+                            spritesheet = "__AsphaltRoadsPatched__/graphics/terrain/asphalt/asphalt-side.png",
+                            count = 8
+                        },
+                        u_transition =
+                        {
+                            spritesheet = "__AsphaltRoadsPatched__/graphics/terrain/asphalt/asphalt-u.png",
+                            count = 8
+                        },
+                            o_transition =
+                        {
+                            spritesheet = "__AsphaltRoadsPatched__/graphics/terrain/asphalt/asphalt-o.png",
+                            count = 1
+                        }
+                    } -- End of mask
+                } -- End of layout
+            } -- end of transition
         },
         walking_sound =
         {
@@ -84,7 +90,8 @@ data:extend(
             }
         },
         map_color = config.asphalt_colour,
-        pollution_absorption_per_second = 0,
+        --absorptions_per_second = {pollution = 0.0, pollen = 0.0},
+        absorptions_per_second = {pollution = 0.0},
         vehicle_friction_modifier = config.asphalt_vehicle_speed_modifier,
         transitions = tile_transitions.asphalt_transitions(),
         transitions_between_transitions = tile_transitions.asphalt_transitions_between_transitions()

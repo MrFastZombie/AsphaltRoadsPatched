@@ -36,12 +36,12 @@ local gOrderIndex = {}
 function func.default_value(suffix)
 	local cnt = 0
     if suffix == "o" then cnt = 1 else cnt = 8 end   
-    return {picture = path.."asphalt/asphalt-"..suffix..".png", count = cnt}
+    return {spritesheet = path.."asphalt/asphalt-"..suffix..".png", count = cnt}
 end
 
 function func.diagonal_value(tileset, dir)
-    local cnt = 8   
-    return {picture = path..tileset.."/"..tileset..dir.."-inner-corner.png", count = cnt}
+    local cnt = 8
+    return {spritesheet = path..tileset.."/"..tileset..dir.."-inner-corner.png", count = cnt}
 end
 
 function func.setMainVariant(levels, cnt, path)
@@ -93,7 +93,7 @@ function func.createTileSetB(tileset, numDirections, dirNames, mainVariants, mai
         if diagonalTile ~= nil and diagonalTile == true then 
             ic = func.diagonal_value(tileset, thisdir) 
             tilelayer = config.asphalt_priority_layer
-        else 
+        else
             ic = func.default_value("inner-corner") 
         end
         data:extend({{            
@@ -112,15 +112,27 @@ function func.createTileSetB(tileset, numDirections, dirNames, mainVariants, mai
             variants =
             {
                 main = func.setMainVariant(mainVariants, mainVariantsCnt, thispath..tileset..thisdir),
-                inner_corner = ic,
-                outer_corner = func.default_value("outer-corner"),
-                side = func.default_value("side"),
-                u_transition = func.default_value("u"),
-                o_transition = func.default_value("o"),
+                --inner_corner = ic,
+                --outer_corner = func.default_value("outer-corner"),
+                --side = func.default_value("side"),
+                --u_transition = func.default_value("u"),
+                --o_transition = func.default_value("o"),
+                transition = {
+                    layout = {
+                        overlay = {
+                            inner_corner = ic,
+                            outer_corner = func.default_value("outer-corner"),
+                            side = func.default_value("side"),
+                            u_transition = func.default_value("u"),
+                            o_transition = func.default_value("o")
+                        } -- End of Mask
+                    } -- End of Transition
+                } -- End of Variants
             },
             walking_sound = walking_sounds,
             map_color = func.assignMapColour(tileset),
-            pollution_absorption_per_second = 0,
+            --absorptions_per_second = {pollution = 0.0, pollen = 0.0},
+            absorptions_per_second = {pollution = 0.0},
             vehicle_friction_modifier = config.asphalt_vehicle_speed_modifier,
             transitions = tile_transitions.asphalt_transitions(),
             transitions_between_transitions = tile_transitions.asphalt_transitions_between_transitions()
