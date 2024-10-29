@@ -6,7 +6,9 @@
 
 This version of Asphalt Roads has been patched to run on Factorio 2.0. 
 
-Do not expect many new features, I intend mainly to just have this wonderful mod working on the latest Factorio version. If you find bugs, please report them to the Github repository's issue page. 
+Do not expect many new features, I intend mainly to just have this wonderful mod working on the latest Factorio version. If you find bugs, please report them to the Github repository's issue page.
+
+I have not played Space Age yet and I do not yet know how this mod interacts with it.
 
 Please note, this version has a new mod name meaning that it probably won't bring back asphalt on old saves.
 

@@ -12,9 +12,8 @@ Date: 29. 10. 2024
       - Collision maps updated to new format.
         - Example: collision_mask = {"ground-tile"} -> collision_mask = { layers = {ground_tile = true} }
       - Tile transitions code updated to match Factorio 2.0.
-      - Recipes updated to new format.
-        - Results fields were moved to a results table in 2.0.
-      - Sound names fixed (ex: concrete-01.ogg -> concrete-1.ogg).
+      - Recipes no longer use short-hand definitions.
+      - Sound names updated (ex: concrete-01.ogg -> concrete-1.ogg).
       - Picture field updated to Spritesheet where applicable.
       - Tile absorption updated to new format, with support for Space Age.
         - Example (w/o Space Age): pollution_absorption_per_second = 0 -> absorptions_per_second = {pollution = 0.0}
