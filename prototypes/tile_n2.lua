@@ -113,6 +113,7 @@ function func.createTileSetB(tileset, numDirections, dirNames, mainVariants, mai
             walking_speed_modifier = config.asphalt_walking_speed_modifier,
             layer = tilelayer,
             shift_layer_if_asphald_roads_is_present = false,
+            layer_group = "ground-artificial",
             decorative_removal_probability = 0.97,
             variants =
             {

@@ -34,7 +34,7 @@ AR_config.asphalt_colour_marking_red =     {r=49, g=40, b=40}
 AR_config.asphalt_colour_marking_green =   {r=40, g=49, b=40}
 
 -- layer of all asphalt tiles except those with diagonal lines
-AR_config.asphalt_base_layer = 60 
+AR_config.asphalt_base_layer = 5
 
 -- layer of diagonal line tiles
 AR_config.asphalt_priority_layer = AR_config.asphalt_base_layer + 1

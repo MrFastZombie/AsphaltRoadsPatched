@@ -18,6 +18,7 @@ data:extend(
         mined_sound = { filename = "__base__/sound/deconstruct-bricks.ogg" },
         collision_mask = { layers = {ground_tile = true} },
         walking_speed_modifier = config.asphalt_walking_speed_modifier,
+        layer_group = "ground-artificial",
         layer = config.asphalt_base_layer,
         shift_layer_if_asphald_roads_is_present = false,
         decorative_removal_probability = 0.97,

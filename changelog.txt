@@ -3,7 +3,11 @@ Version: 1.4.1
 Date: 29. 10. 2024
   Changes:
     - Updated short description to include original author's name.
-    - This update will release when I have more to update. If you see this on the mod page's changelog I forgor to change this 💀
+  Bugfixes:
+    - Fixed layer ordering
+      - Asphalt roads are now assigned to the "ground-artificial" layer group.
+      - The asphalt should now always be below stone paths.
+      - Alien Biomes had to be added as an optional dependency to force this to load after.
 ---------------------------------------------------------------------------------------------------
 Version: 1.4.0
 Date: 29. 10. 2024
