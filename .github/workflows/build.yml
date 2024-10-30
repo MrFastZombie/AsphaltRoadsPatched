@@ -49,6 +49,7 @@ jobs:
             settings.lua
             tile_reconverter_config.lua
             tile_reconverter.lua
+            data-final-fixes.lua
           sparse-checkout-cone-mode: false
 
       - name: Get version number
