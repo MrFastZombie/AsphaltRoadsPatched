@@ -11,7 +11,7 @@ local type4b_tileset = {"marking-white-dl"}
 local type5a_tileset = {"marking-yellow"}
 local type5b_tileset = {"marking-yellow-dl"}
 local mining_sound = "__base__/sound/deconstruct-bricks.ogg"
-local mining_result = "Arci-asphalt"
+--local mining_result = "Arci-asphalt"
 local mapcolours = {{"white", config.asphalt_colour_marking_white}, {"yellow", config.asphalt_colour_marking_yellow}, {"blue", config.asphalt_colour_marking_blue}, {"red", config.asphalt_colour_marking_red}, {"green", config.asphalt_colour_marking_green}}
 local walking_sounds = {
     {
@@ -101,13 +101,19 @@ function func.createTileSetB(tileset, numDirections, dirNames, mainVariants, mai
         else
             ic = func.default_value("inner-corner") 
         end
+
+        local mresult = "Arci-"..tileset..thisdir
+        mresult = string.gsub(mresult, "-[a-z]*$", "", 1)
+        log(tileset..thisdir.." mresult = "..mresult)
+
         data:extend({{            
             type = "tile",
             name = "Arci-"..tileset..thisdir,
             next_direction = "Arci-"..tileset..nextdir,
             needs_correction = false,
             transition_merges_with_tile = "Arci-asphalt",
-            minable = {mining_time = config.asphalt_mining_speed, result = mining_result},
+           minable = {mining_time = config.asphalt_mining_speed, result = mresult},
+            --minable = {mining_time = config.asphalt_mining_speed, result = mining_result},
             mined_sound = { filename = mining_sound },
             collision_mask = {layers= {ground_tile=true}},
             walking_speed_modifier = config.asphalt_walking_speed_modifier,
@@ -135,6 +141,7 @@ function func.createTileSetB(tileset, numDirections, dirNames, mainVariants, mai
                     } -- End of Transition
                 } -- End of Variants
             },
+            placeable_by = {item = mresult, count = 1},
             walking_sound = walking_sounds,
             driving_sound = drive_sound,
             map_color = func.assignMapColour(tileset),

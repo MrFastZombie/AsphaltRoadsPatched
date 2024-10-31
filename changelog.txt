@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.2
+Date: 30. 10. 2024
+  Bugfixes:
+    - Fixed normal asphalt replacing painted asphalt tiles in blueprints.
+      - This fix has the side effect of making painted tiles drop themselves instead of normal asphalt when mined.
+        - You can still convert painted tiles back to normal asphalt by pressing "J" by default while holding painted tiles on your cursor.
+      -This also fixes not being able to place painted tiles directly over asphalt.
+---------------------------------------------------------------------------------------------------
 Version: 1.4.1
 Date: 29. 10. 2024
   Changes:
