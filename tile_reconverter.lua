@@ -1,9 +1,15 @@
 require "tile_reconverter_config"
 
 function revert_tiles (event)
-    local player = game.players[event.player_index]   
-    -- check if the player holds something in his hands that is an item to place tiles with
-    if player.cursor_stack.valid_for_read then
+	if event.player_index == nil then return end --I don't see how this could happen, but may as well be safe.
+    local player = game.players[event.player_index]
+	-- check if the player holds something in his hands that is an item to place tiles with
+    if player.cursor_stack == nil then
+		log("[Asphalt Roads] Somehow got a nil cursor_stack!")
+		return
+	end
+
+	if player.cursor_stack.valid_for_read then
 		if player.cursor_stack.prototype.place_as_tile_result ~= nil then
 			local item = player.cursor_stack.prototype.name
 			-- check if the tile is made from only one ingredient

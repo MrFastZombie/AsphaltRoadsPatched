@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.3
+Date: 04. 11. 2024
+  Bugfixes:
+    - Fixed a most-likely rare that could occur if the tile reconverter somehow got a nil cursor_stack from a player.
+---------------------------------------------------------------------------------------------------
 Version: 1.4.2
 Date: 30. 10. 2024
   Bugfixes:
