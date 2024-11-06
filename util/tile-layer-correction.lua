@@ -4,13 +4,11 @@ local tile_layer_correction = {}
 function tile_layer_correction.shift_tile_layer(base_layer, offset)
     for k,tileset in pairs(data.raw["tile"]) do
         if tileset.layer ~= nil and base_layer ~= nil then
-            --TODO: Disable this log in next update.
-            log("Shifting " .. tileset.name .. " by " .. offset)
             if tileset.shift_layer_if_asphald_roads_is_present ~= false and tileset.layer >= base_layer then 
                 data.raw["tile"][tileset.name].layer = tileset.layer + offset
             end
         elseif tileset.name ~= nil then 
-            log("Shifting " .. tileset.name .. " resulted in a nil value.")
+            log("Tried shifting " .. tileset.name .. " but it had a nil layer value.")
         end
     end
 end

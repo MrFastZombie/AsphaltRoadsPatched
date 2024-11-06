@@ -2,7 +2,7 @@
 Version: 1.4.4
 Date: 06. 11. 2024
   Bugfixes:
-    - Potentially fixed a crash caused when a nil value is passed to shift_tile_layer()
+    - Fixed a crash that happens with the new version of Alien Biomes by adding a nil check to shift_tile_layer().
   Changes:
     - Turned off a debug log statement I forgot
     - Added a log statement for when a tile has some nil value during shift_tile_layer().
