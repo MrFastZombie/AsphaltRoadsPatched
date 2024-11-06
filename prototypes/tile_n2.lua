@@ -104,7 +104,7 @@ function func.createTileSetB(tileset, numDirections, dirNames, mainVariants, mai
 
         local mresult = "Arci-"..tileset..thisdir
         mresult = string.gsub(mresult, "-[a-z]*$", "", 1)
-        log(tileset..thisdir.." mresult = "..mresult)
+        --log(tileset..thisdir.." mresult = "..mresult)
 
         data:extend({{            
             type = "tile",
