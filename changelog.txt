@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.5
+Date: 08. 11. 2024
+  Features:
+    - Walking speed and Vehicle friction modifiers are now configurable.
+      - The default values are the same values that were previously hardcoded.
+      - For German players, the settings have been localized via Google Translate. As these translations may be flawed, I've added a warning to the translated setting's descriptions to make it clear. If any fluent speakers would like to correct them please see the following github issue: https://github.com/MrFastZombie/AsphaltRoadsPatched/issues/1
+      - For Chinese players, I have found that the current Chinese translation is incomplete, and does not even work due to the folder name being changed in newer Factorio versions. If you are fluent and would like to help localize this mod please see: https://github.com/MrFastZombie/AsphaltRoadsPatched/issues/2
+      - For any other players who are fluent in any other language that Factorio supports, I will accept translations.
+---------------------------------------------------------------------------------------------------
 Version: 1.4.4
 Date: 06. 11. 2024
   Bugfixes:

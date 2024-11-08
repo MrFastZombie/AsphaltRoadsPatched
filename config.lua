@@ -1,10 +1,10 @@
 local AR_config = {}
 
 -- This value modifies the bonus speed the player will experience if they walk on this tiles
-AR_config.asphalt_walking_speed_modifier = 1.5 -- refined concrete: 1.5
+AR_config.asphalt_walking_speed_modifier = settings.startup["AR-asphalt-walking-mod"].value -- refined concrete: 1.5
 
 -- This value modifies the vehicle friction: Lower values increase acceleration and top-speed. This affects wheeled vehicles the most.
-AR_config.asphalt_vehicle_speed_modifier = 0.5 -- refined concrete: 0.8 
+AR_config.asphalt_vehicle_speed_modifier = settings.startup["AR-asphalt-friction-mod"].value -- refined concrete: 0.8 
 
 AR_config.asphalt_mining_speed = 0.1 -- refined concrete: 0.1 
 

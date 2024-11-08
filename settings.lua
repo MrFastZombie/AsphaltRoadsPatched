@@ -41,6 +41,24 @@ data:extend({
         order = "e",
     },
     {
+        type = "double-setting",
+        name = "AR-asphalt-walking-mod",
+        setting_type = "startup",
+        default_value = 1.5,
+        minimum_value = 0.1,
+        maximum_value = 1000,
+        order = "eaa"
+    },
+    {
+        type = "double-setting",
+        name = "AR-asphalt-friction-mod",
+        setting_type = "startup",
+        default_value = 0.5,
+        minimum_value = 0.1,
+        maximum_value = 100,
+        order = "eab"
+    },
+    {
         type = "string-setting",
         name = "AR-item-group",
         setting_type = "startup",
