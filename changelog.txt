@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.7
+Date: 21. 12. 2024
+  Changes:
+    - Added support for Wood Gassification Updated
+      - Should Wood Gassification Updated be merged with Wood Gassification, Asphalt Roads Patched will still be able to detect the original version of the mod.
+    - Made Alien Biomes a hidden optional dependency
+      - Why?: Alien Biomes was added as an optional dependency only for technical reasons. Asphalt Roads does not have additional content when used with Alien Biomes, so the dependency is now hidden to avoid confusion.
+---------------------------------------------------------------------------------------------------
 Version: 1.4.6
 Date: 07. 12. 2024
   Info:

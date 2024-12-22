@@ -6,7 +6,7 @@
   "author": "Arcitos",
   "homepage": "https://github.com/MrFastZombie/AsphaltRoadsPatched",
   
-  "version": "1.4.6",
+  "version": "1.4.7",
   "factorio_version": "2.0",
   "dependencies": [
   "base >= 2.0", 
@@ -14,6 +14,6 @@
   "?Dectorio >= 0.8.4", 
   "?Wood_Gasification >= 0.5.1", 
   "?pypetroleumhandling >= 1.1.8", 
-  "?alien-biomes >= 0.7.0"
+  "(?) alien-biomes >= 0.7.0"
   ]
 }

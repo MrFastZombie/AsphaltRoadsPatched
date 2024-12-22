@@ -11,9 +11,11 @@ if config.use_BioIndustries_items and mods["Bio_Industries"] then
 end
 
 -- only if Wood_Gasification is present:
-if config.use_WoodGasification_items and mods["Wood_Gasification"] then
-    if data.raw["fluid"]["tar"] then
-        werkzeug.replace_recipe_ingredient("Arci-asphalt","crude-oil","tar")
+if config.use_WoodGasification_items then
+    if mods["Wood_Gasification"] or mods["Wood_Gasification_updated"] then
+        if data.raw["fluid"]["tar"] then
+            werkzeug.replace_recipe_ingredient("Arci-asphalt","crude-oil","tar")
+        end
     end
 end
 
@@ -28,4 +30,4 @@ if config.use_PyPetrol_items and mods["pypetroleumhandling"] then
 end
 
 -- asphalt has a lower layer than stone or other tilesets. The following function increases the layer of all tilesets accordingly.
-tile_layer_correction.shift_tile_layer(config.asphalt_base_layer, 2) 
+tile_layer_correction.shift_tile_layer(config.asphalt_base_layer, 2)

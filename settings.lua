@@ -120,6 +120,7 @@ data:extend({
 local optionalSettings = {
     ["Bio_Industries"] = {name = "AR-use-items-from-bioindustries"},
     ["Wood_Gasification"] = {name = "AR-use-items-from-woodgasification"},
+    ["Wood_Gasification_updated"] = {name = "AR-use-items-from-woodgasification"},
     ["pypetroleumhandling"] = {name = "AR-use-items-from-pypetrol"}
 }
 for mod, setting in pairs(optionalSettings) do
