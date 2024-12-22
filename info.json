@@ -10,11 +10,11 @@
   "factorio_version": "2.0",
   "dependencies": [
   "base >= 2.0", 
-  "?Bio_Industries", 
-  "?Dectorio >= 0.8.4", 
-  "?Wood_Gasification >= 0.5.1", 
+  "?Bio_Industries > 1.1.19", 
+  "?Dectorio >= 0.13.0", 
+  "?Wood_Gasification > 3.2.1", 
   "?Wood_Gasification_updated >= 1.0.1",
-  "?pypetroleumhandling >= 1.1.8", 
+  "?pypetroleumhandling >= 3.0.0", 
   "(?) alien-biomes >= 0.7.0"
   ]
 }
