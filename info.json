@@ -13,6 +13,7 @@
   "?Bio_Industries", 
   "?Dectorio >= 0.8.4", 
   "?Wood_Gasification >= 0.5.1", 
+  "?Wood_Gasification_updated >= 1.0.1",
   "?pypetroleumhandling >= 1.1.8", 
   "(?) alien-biomes >= 0.7.0"
   ]
