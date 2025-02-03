@@ -255,7 +255,9 @@ function werkzeug.remove_recipe_ingredient(recipe, removeIngredient, difficulty)
         for _,idata in pairs(ingredient_data) do
             for k,i in pairs(idata) do
                 if (i.name ~= nil and i.name == removeIngredient) or (i[1] ~= nil and i[1] == removeIngredient) then
-                    idata[k] = nil -- delete the ingredient
+                    log("Removing recipe ingredient " .. idata[k].name .. " from " .. recipe)
+                    --idata[k] = nil -- delete the ingredient
+                    table.remove(idata, k) -- delete the ingredient
                     ingredient_removed = true
                 end
             end
