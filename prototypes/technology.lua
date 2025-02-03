@@ -1,4 +1,5 @@
 local cost_lvl = settings.startup["AR-research-cost"].value
+local useAdv = settings.startup["AR-require-adv-oil-processing"].value
 
 local research_cost = {
 	["level-0"] = {
@@ -41,6 +42,11 @@ local research_cost = {
 			"production-science-pack"
 		}}
 	}
+
+	if useAdv then 
+		research_cost["level-1"].prerequisites[2] = "advanced-oil-processing"
+		research_cost["level-2"].prerequisites[3] = "advanced-oil-processing"
+	end
 
 data:extend(
 {

@@ -32,6 +32,13 @@ data:extend({
         order  = "d",
     },
     {
+        type = "bool-setting",
+        name = "AR-require-adv-oil-processing",
+        setting_type = "startup",
+        default_value = false,
+        order  = "da",
+    },
+    {
         type = "int-setting",
         name = "AR-asphalt-stack-size",
         setting_type = "startup",

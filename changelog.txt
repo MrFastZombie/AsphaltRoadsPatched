@@ -1,4 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.8
+Date: 03. 02. 2025
+  Changes:
+    - New optional setting to require Advanced Oil Processing as a prerequisite for researching asphalt roads.
+      - This setting is off by default, preserving the original tech requirements for this mod.
+      - This setting will only affect Normal and Expensive research costs.
+        - This setting does not have any effect if your research cost is set to the cheapest level, as AOP requires chemical science packs.
+        - When set to normal costs, this setting will replace the chemical science preres with AOP.
+        - When set to expensive costs, this setting will add AOP as a preres without replacing anything.
+      - This setting has been localized for Deutsch (German), and Français (French). 
+        - The current Deutsch localization for this setting is provided by Google Translate. If you are fluent in Deutsch it would be appreciated if you let me know if the translation is satisfactory, or to provide corrections.
+---------------------------------------------------------------------------------------------------
 Version: 1.4.7
 Date: 21. 12. 2024
   Changes:
