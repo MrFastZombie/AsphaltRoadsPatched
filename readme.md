@@ -6,7 +6,7 @@
 
 This version of Asphalt Roads has been patched to run on Factorio 2.0.
 
-Do not expect many new features, I intend mainly to just have this wonderful mod working on the latest Factorio version. If you find bugs, please report them to the Github repository's issue page.
+Do not expect many new features, I intend mainly to just have this wonderful mod working on the latest Factorio version. I'm not an artist so I probably won't make any new tiles. If you find bugs, it is preferable to report them to the Github repository's issue page but the discussions page here is also fine (I may miss discussion posts more easily though).
 
 I have not played Space Age yet and I do not yet know how this mod interacts with it, but I can confirm that it works at least on Nauvis.
 
@@ -21,6 +21,8 @@ All code changes are licensed under the same license as the original mod: MPL v2
 [Zetty](https://mods.factorio.com/user/Zetty "Zetty's profile") for updating the [previous version](https://mods.factorio.com/mod/AsphaltPaving "Zetty's version of the mod") of the mod.
 
 [Arcitos](https://mods.factorio.com/user/Arcitos "Arcitos' profile") for developing the original mod.
+
+[Fr_Dae](https://mods.factorio.com/user/Fr_Dae) for providing French translation.
 
 ---
 
@@ -86,20 +88,23 @@ This mod is mostly non-game-changing, apart from the reduced vehicle friction of
 
 - EN (English)
 - DE (German)
-- CN (Chinese)
+- ~~CN (Chinese)~~ 
+- *(New)* FR (French)
 
 If you like this mod and you've created a translation of your own, please do not hesitate to send me this, so that it can be made accessible to all in the next version. Same, if you spot spelling mistakes. Thanks in advance!
+
+(**Note from MrFastZombie:** *The Chinese translation is outdated and needs to be updated. It is currently unavailable. The German translation is still working but could use some proof-reading on a couple new entries. Like the original mod, I will accept translations and corrections. Any languages marked "New" are new with this patched version of the mod*).
 
 ---
 
 ## Known issues
 
-**~~"I'm using 'Asphalt Roads' along with 'Alien Biomes' and other mods and are constantly getting errors about missing tiles"~~**
+**"I'm using 'Asphalt Roads' along with ~~'Alien Biomes' and~~ other mods and are constantly getting errors about missing tiles"**
 
-~~Factorio's limit for the number of different tile prototypes a game can use at a time is hard-coded. **Currently this limit is 255 tiles**. If you load multiple mods that add a lot of new tiles (like "Alien Biomes" and "Dectorio"), this might be a problem, as "Asphalt Roads" allone needs 65 free tile slots to work properly (assuming all tiles being enabled).~~
+Factorio's limit for the number of different tile prototypes a game can use at a time is hard-coded. **~~Currently this limit is 255 tiles~~**. If you load multiple mods that add a lot of new tiles (like "Alien Biomes" and "Dectorio"), this might be a problem, as "Asphalt Roads" alone needs 65 free tile slots to work properly (assuming all tiles being enabled).
 
-~~If you experience problems, please try disabling some of the markings in Asphalt roads' mod options. Disabling both double line road line markings, for example, will free up 24 slots. If other mods allow disabling some of their tiles, please consider using those options, too.~~
+If you experience problems, please try disabling some of the markings in Asphalt roads' mod options. Disabling both double line road line markings, for example, will free up 24 slots. If other mods allow disabling some of their tiles, please consider using those options, too.
 
 ~~Unfortunately, the Factorio devs do not consider raising this limit in the foreseeable future, so a bit of tinkering is unavoidable.~~
 
-**Note from MrFastZombie:** *This issue should no longer occur as the Factorio devs increased the tile limit in 2.0.*
+**Note from MrFastZombie:** *This should be less of an issue with the new tile limit in Factorio 2.0, although I do reckon that hitting limits is still possible as 2.0 now has tile layers that are each limited to 255 tiles. Mods that use the same layer groups may still overfill that layer group. I don't think this issue will happen when Asphalt Roads is installed with Alien Biomes anymore, however.*
