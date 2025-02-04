@@ -19,6 +19,15 @@ if config.use_WoodGasification_items then
     end
 end
 
+--only if Corrundum is present:
+if config.use_Corrundum_items and mods["corrundum"] then
+    if config.use_PyPetrol_items == false or not mods["pypetroleumhandling"] then --Mainly to just not buff pypetroleumhandling's recipe on accident.
+        werkzeug.remove_recipe_ingredient("Arci-asphalt", "heavy-oil")
+        werkzeug.add_recipe_ingredient("Arci-asphalt", {type = "item", name = "asphalt", amount = 1})
+        werkzeug.replace_recipe_result("Arci-asphalt", "Arci-asphalt", "Arci-asphalt", 15)
+    end
+end
+
 -- only if Py_Petroleumhandling is present:
 if config.use_PyPetrol_items and mods["pypetroleumhandling"] then
     if data.raw["fluid"]["tar"] and data.raw["fluid"]["bitumen"] then
@@ -27,6 +36,14 @@ if config.use_PyPetrol_items and mods["pypetroleumhandling"] then
         werkzeug.add_recipe_ingredient("Arci-asphalt", {type = "fluid", name = "tar", amount = 40})
         werkzeug.add_recipe_ingredient("Arci-asphalt", {type = "fluid", name = "bitumen", amount = 60})
     end
+end
+
+if config.use_Stone == false then
+    werkzeug.remove_recipe_ingredient("Arci-asphalt","stone-brick")
+end
+
+if config.use_Crude_Oil == false then
+    werkzeug.remove_recipe_ingredient("Arci-asphalt", "crude-oil")
 end
 
 -- asphalt has a lower layer than stone or other tilesets. The following function increases the layer of all tilesets accordingly.
