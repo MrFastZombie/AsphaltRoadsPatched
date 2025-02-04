@@ -19,7 +19,7 @@ data:extend({
         type = "bool-setting",
         name = "AR-use-items-from-corrundum",
         setting_type = "startup",
-        default_value = true,
+        default_value = false,
         hidden = true,
         order  = "bc",
     },

@@ -3,6 +3,7 @@ Version: 1.4.8
 Date: 04. 02. 2025
   Features:
     - Compatibility with Corrundum
+      - This compat will require you to visit the new planet to use asphalt roads, so it is disabled by default.
       - Enabling compatibility with Corrundum makes the following changes to the asphalt tile recipe
         - Replace heavy oil with 1x asphalt brick from Corrundum
         - Buffs output from 10x tiles to 15x to compensate for higher heavy oil usage
