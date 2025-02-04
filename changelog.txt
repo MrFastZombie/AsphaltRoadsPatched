@@ -4,6 +4,10 @@ Date: 04. 02. 2025
   Features:
     - Compatibility with Corrundum
       - This compat will require you to visit the new planet to use asphalt roads, so it is disabled by default.
+        - This compat will also add Corrundum's asphalt tech as a prerequisite.
+          - Both of these things mean that this compat will push Asphalt Roads into the later-game regardless of your other settings if it is enabled.
+          - If you use the Advanced Oil Processing setting added in this update, it will not be as obvious with this compat enabled, since it is a distant prerequisite for Corrundum's asphalt tech.
+          - If you set Asphalt Road's tech cost to normal or cheap with this compat, you will still need purple science to unlock it.  
       - Enabling compatibility with Corrundum makes the following changes to the asphalt tile recipe
         - Replace heavy oil with 1x asphalt brick from Corrundum
         - Buffs output from 10x tiles to 15x to compensate for higher heavy oil usage
@@ -17,8 +21,9 @@ Date: 04. 02. 2025
         - This setting does not have any effect if your research cost is set to the cheapest level, as AOP requires chemical science packs.
         - When set to normal costs, this setting will replace the chemical science preres with AOP.
         - When set to expensive costs, this setting will add AOP as a preres without replacing anything.
-      - This setting has been localized for Deutsch (German), and Français (French). 
-        - The current Deutsch localization for this setting is provided by Google Translate. If you are fluent in Deutsch it would be appreciated if you let me know if the translation is satisfactory, or to provide corrections.
+  Info:
+    - The new settings have been localized for Deutsch (German), and Français (French). 
+      - The current Deutsch localization for the new settings is provided by Google Translate. If you are fluent in Deutsch it would be appreciated if you let me know if the translation is satisfactory, or to provide corrections.
 ---------------------------------------------------------------------------------------------------
 Version: 1.4.7
 Date: 21. 12. 2024
