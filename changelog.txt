@@ -1,7 +1,15 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.4.8
-Date: 03. 02. 2025
-  Changes:
+Date: 04. 02. 2025
+  Features:
+    - Compatibility with Corrundum
+      - Enabling compatibility with Corrundum makes the following changes to the asphalt tile recipe
+        - Replace heavy oil with 1x asphalt brick from Corrundum
+        - Buffs output from 10x tiles to 15x to compensate for higher heavy oil usage
+    - Added optional setting to disable stone brick requirement
+      - Does nothing if you enable a mod compatibility that replaces stone bricks.
+    - Added optional setting to disable crude oil requirement
+      - Does nothing if you enable a mod compatibility that replaces crude oil.
     - New optional setting to require Advanced Oil Processing as a prerequisite for researching asphalt roads.
       - This setting is off by default, preserving the original tech requirements for this mod.
       - This setting will only affect Normal and Expensive research costs.
