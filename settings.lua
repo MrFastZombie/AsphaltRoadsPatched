@@ -17,11 +17,33 @@ data:extend({
     },
     {
         type = "bool-setting",
+        name = "AR-use-items-from-corrundum",
+        setting_type = "startup",
+        default_value = true,
+        hidden = true,
+        order  = "bc",
+    },
+    {
+        type = "bool-setting",
         name = "AR-use-items-from-pypetrol",
         setting_type = "startup",
         default_value = true,
         hidden = true,
         order  = "c",
+    },
+    {
+        type = "bool-setting",
+        name = "AR-use-stone",
+        setting_type = "startup",
+        default_value = true,
+        order  = "cda",
+    },
+    {
+        type = "bool-setting",
+        name = "AR-use-crude-oil",
+        setting_type = "startup",
+        default_value = true,
+        order  = "cda",
     },
     {
         type = "string-setting",
@@ -128,7 +150,8 @@ local optionalSettings = {
     ["Bio_Industries"] = {name = "AR-use-items-from-bioindustries"},
     ["Wood_Gasification"] = {name = "AR-use-items-from-woodgasification"},
     ["Wood_Gasification_updated"] = {name = "AR-use-items-from-woodgasification"},
-    ["pypetroleumhandling"] = {name = "AR-use-items-from-pypetrol"}
+    ["pypetroleumhandling"] = {name = "AR-use-items-from-pypetrol"},
+    ["corrundum"] = {name = "AR-use-items-from-corrundum"}
 }
 for mod, setting in pairs(optionalSettings) do
     if mods[mod] then
