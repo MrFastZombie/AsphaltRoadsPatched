@@ -10,6 +10,6 @@ data:extend({
         type = "custom-input",
         name = "AR-event-revert-tiles",
         key_sequence = "J",
-        consuming = "game-only"
+        consuming = "none"
     }
 })

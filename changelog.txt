@@ -1,6 +1,13 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.4.8
-Date: 04. 02. 2025
+Date: 26. 11. 2025
+  Changes:
+    - The tile reconversion hotkey no longer consumes game events. This means it will no longer conflict with the train stock connection hotkey which is also "J" by default.
+      - If you are in a train, the hotkey will be ignored if it can find nearby train cars that might connect with the stock connection hotkey.
+        - This probably won't work at some junctions, so don't sit at a 3 way junction with tiles on your cursor and try to connect a wagon and then ask me to fix this edge case i will cry :'(
+      - This has the side effect of showing the rail connection flying text when using the tile reconverter.
+        - If you don't like this, you can change the rail connection hotkey to something else or disable it. I think this is a worthwhile tradeoff because the hotkey was unusable on the same key before anyways.
+    - The tile reconverter hotkey will now ignore input if you have no items on your cursor.
   Features:
     - Compatibility with Corrundum
       - This compat will require you to visit the new planet to use asphalt roads, so it is disabled by default.
