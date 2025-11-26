@@ -31,6 +31,7 @@ Date: 26. 11. 2025
   Info:
     - The new settings have been localized for Deutsch (German), and Français (French). 
       - The current Deutsch localization for the new settings is provided by Google Translate. If you are fluent in Deutsch it would be appreciated if you let me know if the translation is satisfactory, or to provide corrections.
+      - The Français settings have also been localized by Google Translate. If you are fluent in Français it would be appreciated if you let me know if the translation is satisfactory, or to provide corrections.
 ---------------------------------------------------------------------------------------------------
 Version: 1.4.7
 Date: 21. 12. 2024

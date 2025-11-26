@@ -24,8 +24,8 @@ if config.use_Corrundum_items and mods["corrundum"] then
     if config.use_PyPetrol_items == false or not mods["pypetroleumhandling"] then --Mainly to just not buff pypetroleumhandling's recipe on accident.
         werkzeug.remove_recipe_ingredient("Arci-asphalt", "heavy-oil")
         
-        if data.raw["item"]["asphalt"] then 
-            werkzeug.add_recipe_ingredient("Arci-asphalt", {type = "item", name = "asphalt", amount = 1})
+        if data.raw["item"]["asphalt-c"] then
+            werkzeug.add_recipe_ingredient("Arci-asphalt", {type = "item", name = "asphalt-c", amount = 1})
         end
 
         werkzeug.replace_recipe_result("Arci-asphalt", "Arci-asphalt", "Arci-asphalt", 15)
