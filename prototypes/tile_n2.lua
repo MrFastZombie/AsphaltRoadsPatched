@@ -162,7 +162,7 @@ function func.createIRTentries(tileset, defaultDir, subgrp)
         name = "Arci-"..tileset,
         energy_required = 0.25,
         enabled = false,
-        category = "crafting",
+        categories = {"crafting"},
         ingredients =
         {
             {type ="item", name="Arci-asphalt", amount=10}

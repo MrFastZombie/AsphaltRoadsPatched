@@ -5,7 +5,7 @@ data:extend(
         name = "Arci-asphalt",
         energy_required = 10,
         enabled = false,
-        category = "chemistry",
+        categories = {"chemistry"},
         ingredients =
         {
             {type="fluid", name="crude-oil", amount=30},
