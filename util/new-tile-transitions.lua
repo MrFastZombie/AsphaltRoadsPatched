@@ -33,7 +33,7 @@ local stone_path_to_out_of_map_transition =
   mask_enabled = false
 }
 
-function tile_transitions.asphalt_transitions()
+function tile_transitions.asphalt_transitions() -- === stone_path_transitions
     return
     {
         {
@@ -41,23 +41,35 @@ function tile_transitions.asphalt_transitions()
             transition_group = water_transition_group_id,
 
             spritesheet = "__base__/graphics/terrain/water-transitions/stone-path.png",
-            layout = tile_spritesheet_layout.transition_8_8_8_4_4,
-            background_enabled = false,
-            effect_map_layout =
-            {
-            spritesheet = "__base__/graphics/terrain/effect-maps/water-stone-mask.png",
-            inner_corner_count = 1,
-            outer_corner_count = 1,
-            side_count = 1,
-            u_transition_count = 1,
-            o_transition_count = 1
+            layout = tile_spritesheet_layout.concrete_layout(false,false,false),
+            background_enabled = true,
+            background_layer_offset = 1,
+            offset_background_layer_by_tile_layer = true,
+            effect_map_layout = {
+                spritesheet = "__base__/graphics/terrain/effect-maps/concrete-mask.png",
+                inner_corner_count = 1,
+                outer_corner_count = 1,
+                side_count = 1,
+                u_transition_count = 1,
+                o_transition_count = 1
             }
         },
-    stone_path_to_out_of_map_transition
+        {
+            to_tiles = out_of_map_tile_type_names,
+            transition_group = out_of_map_transition_group_id,
+            
+            background_layer_offset = 1,
+            background_layer_group = "zero",
+            offset_background_layer_by_tile_layer = true,
+            
+            spritesheet = "__base__/graphics/terrain/out-of-map-transition/stone-path-out-of-map-transition.png",
+            layout = tile_spritesheet_layout.concrete_layout(false,true,false),
+            background_enabled = true,
+        }
     }
 end
 
-function tile_transitions.asphalt_transitions_between_transitions()
+function tile_transitions.asphalt_transitions_between_transitions() -- === stone_path_transitions_between_transitions
     return
     {
         {
@@ -65,15 +77,21 @@ function tile_transitions.asphalt_transitions_between_transitions()
             transition_group2 = water_transition_group_id,
 
             spritesheet = "__base__/graphics/terrain/water-transitions/stone-path-transitions.png",
-            layout = tile_spritesheet_layout.transition_3_3_3_1_0,
-            background_enabled = false,
+            layout = tile_spritesheet_layout.concrete_layout(false,false,true),
+            background_enabled = true,
+            background_layer_offset = 1,
+            offset_background_layer_by_tile_layer = true,
             effect_map_layout =
             {
-            spritesheet = "__base__/graphics/terrain/effect-maps/water-stone-to-land-mask.png",
-            o_transition_count = 0
+                spritesheet = "__base__/graphics/terrain/effect-maps/concrete-mask.png",
+                inner_corner_count = 1,
+                outer_corner_count = 1,
+                side_count = 1,
+                u_transition_count = 1,
+                o_transition_count = 1
             }
-        },
-        {
+            },
+            {
             transition_group1 = default_transition_group_id,
             transition_group2 = out_of_map_transition_group_id,
 
@@ -82,10 +100,9 @@ function tile_transitions.asphalt_transitions_between_transitions()
             offset_background_layer_by_tile_layer = true,
 
             spritesheet = "__base__/graphics/terrain/out-of-map-transition/stone-path-out-of-map-transition-b.png",
-            layout = tile_spritesheet_layout.transition_3_3_3_1_0,
-            mask_enabled = false
-        },
-        {
+            layout = tile_spritesheet_layout.concrete_layout(false,true,true),
+            },
+            {
             transition_group1 = water_transition_group_id,
             transition_group2 = out_of_map_transition_group_id,
 
@@ -94,13 +111,15 @@ function tile_transitions.asphalt_transitions_between_transitions()
             offset_background_layer_by_tile_layer = true,
 
             spritesheet = "__base__/graphics/terrain/out-of-map-transition/stone-path-shore-out-of-map-transition.png",
-            layout = tile_spritesheet_layout.transition_3_3_3_1_0,
-            mask_enabled = false,
+            layout = tile_spritesheet_layout.concrete_layout(false,true,true),
             effect_map_layout =
             {
-            spritesheet = "__base__/graphics/terrain/effect-maps/water-stone-to-out-of-map-mask.png",
-            u_transition_count = 0,
-            o_transition_count = 0
+                spritesheet = "__base__/graphics/terrain/effect-maps/concrete-out-of-map-mask.png",
+                inner_corner_count = 1,
+                outer_corner_count = 1,
+                side_count = 1,
+                u_transition_count = 1,
+                o_transition_count = 1
             }
         }
     }
