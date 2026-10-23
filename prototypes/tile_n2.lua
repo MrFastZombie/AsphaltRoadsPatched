@@ -148,7 +148,20 @@ function func.createTileSetB(tileset, numDirections, dirNames, mainVariants, mai
             --absorptions_per_second = {pollution = 0.0, pollen = 0.0},
             absorptions_per_second = {pollution = 0.0},
             vehicle_friction_modifier = config.asphalt_vehicle_speed_modifier,
-            transitions = tile_transitions.asphalt_transitions(),
+            transitions = (function()
+	            -- painted tilesets carry no water-shore entry of their own;
+    	        -- the shore region then falls back to the water tile's
+        	    -- default_cover_tile ("landfill") -- the user's
+           		-- "substitute a base tile for the shore" idea. Plain asphalt
+           		-- (prototypes/tiles.lua) keeps its entry as the in-world control.
+           		local out = {}
+           		for _, e in ipairs(tile_transitions.asphalt_transitions()) do
+             		if e.to_tiles ~= water_tile_type_names then
+               			table.insert(out, e)
+             		end
+           		end
+        		return out
+         	end)(),
             transitions_between_transitions = tile_transitions.asphalt_transitions_between_transitions()
         }})
     end
