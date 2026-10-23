@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.6.0
+Date: 23. 10. 2026
+  Bugfixes:
+    - Fixed tile transitions for painted tiles next to water tiles (Thanks to DrDozer for the contribution!)
+---------------------------------------------------------------------------------------------------
 Version: 1.5.0
 Date: 25. 06. 2026
   Major Features:

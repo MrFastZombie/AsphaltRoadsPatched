@@ -24,6 +24,8 @@ All code changes are licensed under the same license as the original mod: MPL v2
 
 [Fr_Dae](https://mods.factorio.com/user/Fr_Dae) for providing French translation.
 
+[DrDozer](https://mods.factorio.com/user/drdozer) for tile transition improvements.
+
 ---
 
 # Original description (Asphalt Roads)
@@ -88,7 +90,7 @@ This mod is mostly non-game-changing, apart from the reduced vehicle friction of
 
 - EN (English)
 - DE (German)
-- ~~CN (Chinese)~~ 
+- ~~CN (Chinese)~~
 - *(New)* FR (French)
 
 If you like this mod and you've created a translation of your own, please do not hesitate to send me this, so that it can be made accessible to all in the next version. Same, if you spot spelling mistakes. Thanks in advance!
