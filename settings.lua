@@ -46,6 +46,13 @@ data:extend({
         order  = "cda",
     },
     {
+        type = "bool-setting",
+        name = "AR-use-heavy-oil",
+        setting_type = "startup",
+        default_value = true,
+        order  = "cdab",
+    },
+    {
         type = "string-setting",
         name = "AR-research-cost",
         setting_type = "startup",

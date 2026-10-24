@@ -51,5 +51,9 @@ if config.use_Crude_Oil == false then
     werkzeug.remove_recipe_ingredient("Arci-asphalt", "crude-oil")
 end
 
+if config.use_Heavy_Oil == false then
+    werkzeug.remove_recipe_ingredient("Arci-asphalt", "heavy-oil")
+end
+
 -- asphalt has a lower layer than stone or other tilesets. The following function increases the layer of all tilesets accordingly.
 tile_layer_correction.shift_tile_layer(config.asphalt_base_layer, 2)
