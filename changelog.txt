@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.0
-Date: 24. 10. 2026
+Date: 30. 10. 2026
   Features:
     - Added option to remove heavy oil from recipe.
       - Note: Now every item in the recipe can be disabled. Disabling all at the same time just makes the recipe free.
